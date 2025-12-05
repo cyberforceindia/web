@@ -1,0 +1,14 @@
+const http = require('http');
+const server = http.createServer((req, resp) => {
+    resp.writeHead(200, { "content-type": "text/html" });
+    resp.write("Response from the first server.");
+    resp.write("<h2>This is the server page</h2>");
+    resp.write("<p>Thats all abouy jquery i hope all gonna good.</p>");
+    resp.write("<button>Click Here</button></br>")
+    resp.end("ok Bye ");
+
+
+
+});
+
+server.listen(9393);
