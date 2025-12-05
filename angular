@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Angular Expressions</title>
+    <!-- AngularJS CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body>
+
+    <h2>AngularJS Simple Expressions</h2>
+
+    <!-- 1. Simple math expression -->
+    <p>2 + 3 = {{ 2 + 3 }}</p>
+
+    <!-- 2. Using variables with ng-model -->
+    <h3>Greeting Example</h3>
+    <p>
+        Enter your name:
+        <input type="text" ng-model="myName">
+    </p>
+    <p>
+        Hello, {{ myName }}
+    </p>
+
+    <!-- 3. Small calculator using expressions -->
+    <h3>Small Addition Example</h3>
+    <p>
+        Number 1: <input type="number" ng-model="a">
+    </p>
+    <p>
+        Number 2: <input type="number" ng-model="b">
+    </p>
+    <p>
+        Sum = {{ a + b }}
+    </p>
+
+</body>
+</html>
